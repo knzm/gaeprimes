@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Last 10 primes</title>
+  </head>
+  <body>
+    <h1>Last 10 primes</h1>
+    <table>
+      <tr><th>prime</th><th>owner</th></tr>
+      {% for prime in primes %}
+        <tr>
+          <td>{{ prime.number }}</td>
+          <td>{{ prime.owner }}</td>
+        </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
