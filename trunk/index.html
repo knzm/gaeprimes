@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Let's get your prime!</title>
+  </head>
+  <body>
+    <h1>Get your prime!</h1>
+    <p><a href="/get_prime">Get your prime now!</a></p>
+    {% if user %}
+    <p><a href="/yourprimes">Remember your primes</a>
+    /
+    <a href="/logout">logout</a></p>
+    {% else %}
+    <p>If you <a href="/login">login</a>, we can remember your primes.</p>
+    {% endif %}
+    <p><a href="/list">List of recent primes</a></p>
+  </body>
+</html>
